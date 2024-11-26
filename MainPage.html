@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<title>Pet Lovers</title>
+<link rel="icon" href="MainPage-Media/doglogo.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="MainPage.css">
+</head>
+<body>
+
+    <!--Header-->
+<header class="container-fluid px-4 mt-5 w-100">
+    <div class="row">
+        <div id="headerDiv" class="col-3 d-flex">
+            <a class="navbar-brand" href="MainPage.html">
+            <img src="MainPage-Media/petLovers_logo.png" style="width: 50px;" alt="Company Logo">
+            </a>
+            <a href="MainPage.html" class="mx-2" style="text-decoration:none; color:black;"><h2 style="font-family:cursive ;">Pet Lovers</h2></a>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-light col-7 px-5">
+            <div class="navbar-items container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 d-flex justify-content-start justify-content-lg-end">
+                        <li class="nav-item px-2">
+                            <a class="nav-link text-black" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link text-black" href="#" data-bs-toggle="dropdown" aria-expanded="false">Adopt</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Explore Pets</a></li>
+                                <li><a class="dropdown-item" href="#">How to adopt</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2" style="border-bottom-style: solid; border-bottom-color:#e3f120;">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link text-black" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Offers</a></li>
+                                <li><a class="dropdown-item" href="#">New Added Pets</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link text-black" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="col-2 d-flex justify-content-center align-items-center">
+            <a class="btn me-2 d-flex align-items-center" href="#" style="background-color: #e39236; color: #262a2cdf;">
+                <span>Log In</span>
+                <i class="fa-solid fa-circle-user" style="margin-left: 10px;"></i>
+            </a>
+            <a class="btn btn-secondary ms-2 d-flex align-items-center" href="#">
+                <span>Sign Up</span>
+                <i class="fa-solid fa-right-to-bracket" style="margin-left: 10px;"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Carousel -->
+<div id="myCarousel" class="container-fluid carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <video id="myVideo3" src="MainPage-Media/slide1.mp4" type="video/mp4" autoplay muted style="z-index: 1000; width: 100%;">
+        ops ! could not load the video
+        </video>
+        <div style="position: absolute; top: 20%; left: 0; width: 100%; text-align: center; z-index: 2000;">
+        <p style="font-size: 50px; font-weight: 400;color: white">Feather And Friendship</p>
+        <p style="font-size: 50px; font-weight: 400;color: #9de3be">Adopt a Feathered Friend Today!</p>
+        </div>
+    </div>
+    <div class="carousel-item" style="position: relative;">
+        <video id="myVideo2" src="MainPage-Media/slide2.mp4" type="video/mp4" autoplay muted style="z-index: 1000; width: 100%;">
+        ops ! could not load the video
+        </video>
+        <div style="position: absolute; top: 20%; left: 0; width: 100%; text-align: center; z-index: 2000;">
+        <p style="font-size: 50px; font-weight: 400;color: white">Find Your Furry</p>
+        <p style="font-size: 50px; font-weight: 400;color: #9de3be">Soulmate Right Meow!</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <video id="myVideo1" src="MainPage-Media/slide3.mp4" type="video/mp4" autoplay muted style="z-index: 1000; width: 100%;">
+        ops ! could not load the video
+        </video>
+        <div style="position: absolute; top: 20%; left: 0; width: 100%; text-align: center; z-index: 2000;">
+        <p style="font-size: 50px; font-weight: 400;color: white">Tails of Joy</p>
+        <p style="font-size: 50px; font-weight: 400;color: #9de3be">Your New Best Friend Awaits!</p>
+        </div>
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </a>
+</div>
+
+<!--Section 1-->
+<section class="container-fluid" style="margin-top: 125px; margin-bottom: 150px;">
+<div class="row">
+    <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center text-center p-3" data-aos="fade-right" data-aos-duration="3000">
+        <h1 class="m-0 p-0" style="color: #3d5ee0; font-size: 2rem;">
+            About Us
+        </h1>
+        <p class="mt-3 text-center" style="width: 90%; line-height: 1.6; font-size: 1rem;">
+            Pet Lovers is an adoption website that connects animals in need with the right people. Based online, we work as an independent third party between those looking to rehome an animal and those wishing to adopt, foster, or sponsor an animal.
+        </p>
+        <div class="mt-4">
+            <button style="border: none; border-radius: 18px; height: 40px; background-color: #2f53e1; width: 150px;">
+                <a href="#" style="text-decoration: none; color: white;">Learn more</a>
+            </button>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
+    <img style="border-radius: 5px;" src="https://static.wixstatic.com/media/e7949c_d9e396e9387c40f7819460601d6125a9~mv2.jpg/v1/fill/w_753,h_663,fp_0.46_0.54,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_3805_JPG.jpg" alt="" class="w-100">
+</div>
+</div>
+</section>
+
+<!--Section 2-->
+<section class="container grid text-center" style="margin-top: 80px; margin-bottom: 80px;">
+<div class="row">
+<div class="col-sm-12 col-md-4 mt-5" style="font-size: larger; text-wrap: wrap;">
+    <i class="fa-solid fa-shield-cat fa-3x" style="color: #e08925;"></i>
+    <h1 class="mt-4" style="color: #132a91; position: relative;">Adopt</h1>
+    <p class="mt-3 text-center">The number of animals looking<br> for homes is ever-growing.you<br>have the power to change a life<br>and to become the best solution.<br><a href="Explore.html" style="text-decoration: none; color: #1a83acdf;">Click here</a> to find your companion.
+    </p>
+</div>
+<div class="col-sm-12 col-md-4 mt-5" style="font-size: larger; text-wrap: wrap">
+    <i class="fa-solid fa-circle-info fa-3x" style="color: #120d45;"></i>
+    <h1 class="mt-4" style="color: #c37322;">About</h1>
+    <p class="mt-3 text-center">
+        At Pet Adoption Hub, we are dedicated where every pet has a loving home. Our platform connects animal shelters with compassionate families.<a href="#" style="text-decoration: none; color: #1a83acdf;">Click here</a> if you want to know more about us
+    </p>
+    
+    </div>
+<div class="col-sm-12 col-md-4 mt-5" style="text-wrap: wrap">
+    <i class="fa-solid fa-phone-volume fa-3x" style="color: #78e800;"></i>
+    <h1 class="mt-4" style="color: #911335; position: relative; top:8.5px">Contact</h1>
+    <p class="mt-3 text-center" style="position: relative; top:8.5px">
+        "We're here to assist with your questions and needs. Your feedback matters, so don't hesitate to reach out. Contact us anytime, <a href="#" style="text-decoration: none; color: #1a83acdf;">click here</a> if yoy want to<br> contact us
+    </p>
+        </div>        
+    </div>
+    </section>
+
+    <!--Section 3-->
+    <section class="container-fluid" style="margin-top: 80px; margin-bottom: 80px;">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="MainPage-Media/section-3.png" alt="image">
+            </div>
+            <div class="col-md-6 col-sm-12 mt-5 d-flex flex-column justify-content-center align-items-center text-center p-3" style="background-color: #5f6b9a; border-radius:15px; height:80%" data-aos="fade-left" data-aos-duration="3000">
+                <h1 class="m-0 p-0" style="color: aliceblue; font-weight: bolder; font-size: 3rem; line-height: 1.5;">
+                    Is Your Furry<br> Friend Looking<br> for a Home?
+                </h1>
+                <p class="mt-3 text-center" style="color: rgb(255, 240, 250); width: 90%; font-size: 1rem; line-height: 1.6;">
+                    Choose one of our plans and create a profile<br> for your animal and we will help you find a good home for them.
+                </p>
+                <div class="mt-4">
+                    <button style="border: none; border-radius: 18px; height: 45px; background-color: #c1cbf7; width: 150px; font-size: larger;">
+                        <a href="#" style="text-decoration: none; color: rgb(98, 137, 170);">Explore</a>
+                    </button>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
+    <div class="container" style="margin-top: 125px; margin-bottom: 110px;">
+        <marquee behavior="" direction="left">
+    <h1 class="w-100 text-center mt-5 mb-2" style="color: #911335cb;">Every paw deserves a loving home. 🐾 Adopt today!</h1>
+        </marquee>
+    <video autoplay muted loop controls class="w-100 mt-5" style="border-radius: 10px;">
+        <source src="MainPage-Media/9421545-hd_1920_1080_25fps.mp4" type="video/mp4">
+        <source src="MainPage-Media/9421545-hd_1920_1080_25fps.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>        
+</div>
+
+<footer class="container-fluid mb-0" style="margin-top: 80px; margin-bottom: 80px; background-color: #3d5ee0; color: white; text-align: center; padding: 20px 0;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="mt-3 col-md-12">
+                <p style="font-size: x-large; margin-bottom: 10px;">
+                    © 2024. All rights reserved to Pet Adoption Hub.
+                </p>
+                <p style="font-size: medium; margin-bottom: 10px;">
+                    Join us in giving every pet a loving home. Explore our platform to find your perfect furry friend, and help us create a better world for animals in need.  
+                    Together, we can make a difference by connecting animals in need with compassionate families who care.
+                </p>
+                <p style="font-size: medium; margin-bottom: 20px;">
+                    Every adoption saves a life and brings joy to both the pet and their new family. We connect animals in shelters with caring individuals, ensuring they receive the love and care they deserve. 
+                    Discover resources, tips, and guidance on how to welcome your new pet home and make the transition smooth and happy. Let's spread kindness and compassion one adoption at a time.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center mt-5 mb-4">
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <a title="Facebook" href="#" style="text-decoration: none;">
+                            <i class="fa-brands fa-facebook-f" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-size: larger;"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <a title="Twitter" href="#" style="text-decoration: none;">
+                            <i class="fa-brands fa-twitter" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-size: larger;"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <a title="Instagram" href="#" style="text-decoration: none;">
+                            <i class="fa-brands fa-instagram" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-size: larger;"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-3 text-center">
+                        <a title="Discord" href="#" style="text-decoration: none;">
+                            <i class="fa-brands fa-discord" style="display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; width: 50px; height: 50px; font-size: larger;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    var video1 = document.getElementById("myVideo1");
+    video1.onended = function() {
+        video1.play();
+    };
+    var video2 = document.getElementById("myVideo2");
+
+    video2.onended = function() {
+        video2.play();
+    };
+    var video3 = document.getElementById("myVideo3");
+
+    video3.onended = function() {
+    video3.play();
+    };
+    AOS.init(); 
+    </script>
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
